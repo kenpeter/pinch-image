@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PinchImage :src="testImg" :min-zoom="1" :max-zoom="2.5"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PinchImage from './components/PinchImage'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      testImg : 'https://assets.pernod-ricard.com/nz/media_images/test.jpg?hUV74FvXQrWUBk1P2.fBvzoBUmjZ1wct'
+    }
+  },
   components: {
-    HelloWorld
+    PinchImage
   }
 }
 </script>
