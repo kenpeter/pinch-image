@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <PinchImage :src="testImg" :min-zoom="1" :max-zoom="2.5"/>
+    <p>bla</p>
   </div>
 </template>
 
@@ -21,12 +22,21 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    width: 500px;
+    height: 500px;
+  }
+
+  /*
+  .pinch-wrapper {
+    width: 500px;
+    height: 500px;
+  }
+
+  .pinch-img {
+    width: 400px;
+    height: 400px;
+  }
+  */
+
 </style>
